@@ -1,0 +1,243 @@
+/* Tokio.css */
+
+/* Estilo para a navbar */
+.navbar-brand img {
+    height: 50px;
+    color: #000000;
+  }
+  
+  /* Estilo para os ícones dos produtos */
+  .product-icon {
+    font-size: 50px;
+    color: #b8f01e;
+  }
+  
+  /* Estilo para os cartões dos produtos */
+  .product-card {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.2s;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-card h5 {
+    margin-top: 15px;
+  }
+  .info-box {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    /* ou a cor desejada */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+body {
+  background: linear-gradient(to bottom, #aaf2c9, #ffffff);
+  /* Gradiente de verde claro para branco */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.info-box {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    /* Reduzi o espaçamento interno do quadrado */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para os ícones nas info-boxes */
+.info-box i {
+    color: #34db5e;
+    margin-bottom: 10px;
+}
+
+/* Estilo para o título da seção */
+.info-box h2 {
+    color: #333;
+}
+
+/* Estilo para a descrição principal */
+.info-box p.lead {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Estilo para os parágrafos de texto */
+.info-box p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Estilo para a lista de benefícios */
+.info-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilo para os itens da lista de benefícios */
+.info-box li {
+    margin-bottom: 5px;
+    /* Reduzi o espaçamento inferior entre os itens da lista */
+    color: #333;
+}
+.product-card {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff; /* Fundo branco */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card h5 {
+  margin-top: 15px;
+}
+
+/* Estilo para o botão */
+.btn-primary {
+  background-color: #28a745; /* Verde profissional */
+  border-color: #28a745;
+}
+
+.btn-primary:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+.card-title {
+  color: #95c70c; /* Cor para o texto */
+}
+
+.card-title i {
+  color: #000000; /* Cor para o ícone */
+}
+section {
+  padding: 0rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #297014; /* Cor do texto */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-title i {
+  font-size: 1.5rem; /* Tamanho do ícone */
+  margin-right: 0.5rem; /* Espaçamento do ícone em relação ao texto */
+  color: #c7d319; /* Cor do ícone */
+}
+
+.bg-custom {
+  background-color: rgba(189, 228, 34, 0.699);
+}
+#about {
+  background-color: #f0f0f0; /* Substitua pelo código hexadecimal da cor desejada */
+  padding-top: 5rem; /* Ajuste o padding conforme necessário */
+  padding-bottom: 5rem;
+}
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-about {
+  background-color: #f0f0f0; /* Cor de fundo para a seção sobre a Tokio Marine */
+  padding: 80px 0;
+}
+
+/* Estilos do popup */
+.popup {
+  display: none; /* Inicialmente oculto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
+  z-index: 999; /* Z-index alto para ficar acima de todo o conteúdo */
+  overflow: auto;
+}
+
+.popup-content {
+  background-color: #fff;
+  max-width: 400px;
+  margin: 20% auto; /* Centralizado verticalmente com margem superior de 20% */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.close-popup {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-popup:hover,
+.close-popup:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+.popup-content button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Cor do botão */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.popup-content button:hover {
+  background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+.section-about .card {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section-about .card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.section-products .section-title {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section-products .section-title.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+

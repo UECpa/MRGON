@@ -1,0 +1,195 @@
+
+
+/* Estilo para a navbar */
+.navbar-brand img {
+  height: 50px;
+}
+
+/* Estilo para os Ã­cones dos produtos */
+.product-icon {
+  font-size: 50px;
+  color: #00ff40;
+}
+
+/* Estilo para os cartÃĩes dos produtos */
+.product-card {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card h5 {
+  margin-top: 15px;
+}
+body {
+  background: linear-gradient(to bottom, #aaf2c9, #ffffff);
+  /* Gradiente de verde claro para branco */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Remover as marcações de azul dos links */
+a:focus,
+a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+/* Estilo uniforme para os quadrados */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.info-box {
+    padding: 20px;
+    /* Espaçamento interno */
+    margin: 10px;
+    /* Margem externa para separar as caixas */
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Rubik Doodle Shadow', sans-serif;
+    font-size: 24px;
+    /* Tamanho ajustado - você pode alterá-lo conforme necessário */
+}
+
+.info-box {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    /* ou a cor desejada */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+body {
+    background: linear-gradient(to bottom, #aaf2c9, #ffffff);
+    /* Gradiente de verde claro para branco */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+footer {
+    background-color: #343a40;
+    color: rgb(0, 0, 0);
+    padding: 30px 0;
+}
+
+.custom-title {
+    font-size: 30px;
+    /* Tamanho da fonte maior para um aspecto mais profissional */
+    color: #33b745;
+    /* Cor azul, você pode ajustar a cor conforme preferir */
+    font-weight: bold;
+    /* Deixa o título em negrito para mais destaque */
+}
+
+/* Estilo para os quadrados de informação */
+.info-box {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    /* Reduzi o espaçamento interno do quadrado */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para os ícones nas info-boxes */
+.info-box i {
+    color: #34db5e;
+    margin-bottom: 10px;
+}
+
+/* Estilo para o título da seção */
+.info-box h2 {
+    color: #333;
+}
+
+/* Estilo para a descrição principal */
+.info-box p.lead {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Estilo para os parágrafos de texto */
+.info-box p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Estilo para a lista de benefícios */
+.info-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilo para os itens da lista de benefícios */
+.info-box li {
+    margin-bottom: 5px;
+    /* Reduzi o espaçamento inferior entre os itens da lista */
+    color: #333;
+}
+
+.nav-item a {
+    color: white !important;
+  }
+
+  /* Definição da animação */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplicação da animação */
+.animate__fadeInUp {
+    animation: fadeInUp 0.5s ease forwards;
+}
+.section-title {
+    font-family: Arial, sans-serif; /* Exemplo de uma fonte mais profissional */
+    color: #5fb63c; /* Cor do texto ajustada (preto, por exemplo) */
+    font-size: 30px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito para enfatizar o título */
+  }
+
+
+  /* Estilo inicial - oculto */
+.section-products {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 1.0s ease;
+  }
+  
+  /* Estilo quando visível */
+  .section-products.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  

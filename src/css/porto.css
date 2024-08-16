@@ -1,0 +1,179 @@
+/* Tokio.css */
+
+/* Estilo para a navbar */
+.navbar-brand img {
+    height: 50px;
+  }
+  
+  /* Estilo para os ícones dos produtos */
+  .product-icon {
+    font-size: 50px;
+    color: #007bff;
+  }
+  
+  /* Estilo para os cartões dos produtos */
+  .product-card {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.2s;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-card h5 {
+    margin-top: 15px;
+  }
+
+  .nav-item a {
+    color: white !important;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #18201e; /* Cor do texto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .section-title i {
+    font-size: 1.5rem; /* Tamanho do ícone */
+    margin-right: 0.5rem; /* Espaçamento do ícone em relação ao texto */
+    color: #1652d4; /* Cor do ícone */
+  }
+  
+  body {
+    background: linear-gradient(to bottom, #aaf2c9, #ffffff);
+    /* Gradiente de verde claro para branco */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .product-card {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff; /* Fundo branco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-card h5 {
+    margin-top: 15px;
+  }
+
+  .card-title {
+    color: #1360b8; /* Cor para o texto */
+  }
+
+  .card-title i {
+    color: #000000; /* Cor para o ícone */
+  }
+
+
+  /* Estilos do popup */
+/* Estilo para o fundo da popup */
+.popup {
+  display: none; /* Inicialmente oculto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
+  z-index: 999; /* Z-index alto para ficar acima de todo o conteúdo */
+  overflow: auto; /* Permite rolagem se o conteúdo for maior que a tela */
+  font-family: 'Arial', sans-serif; /* Fonte melhorada */
+}
+
+/* Estilo para o conteúdo da popup */
+.popup-content {
+  background-color: #fff;
+  max-width: 400px;
+  margin: 10% auto; /* Centralizado verticalmente com margem superior de 10% */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Estilo para o botão de fechar */
+.close-popup {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-popup:hover,
+.close-popup:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Estilo para o botão dentro do conteúdo da popup */
+.popup-content button {
+  padding: 12px 24px;
+  background-color: #007bff; /* Cor do botão */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px; /* Tamanho da fonte do botão */
+}
+
+.popup-content button:hover {
+  background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+/* Estilo adicional para melhor visualização e acessibilidade */
+.popup-content p {
+  line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
+}
+
+.popup-content h2 {
+  margin-top: 0;
+  font-size: 24px; /* Tamanho da fonte do título */
+}
+
+
+.section-about {
+  background-color: #c9eefa; /* Cor de fundo para a seção sobre a Tokio Marine */
+  padding: 80px 0;
+}
+
+.section-about .card {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section-about .card.visible {
+  opacity: 1;
+  transform: translateY(0);
+  margin-bottom: 20px
+}
+#products .section-title, #products .product-card {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+#products .visible {
+  opacity: 1;
+  transform: translateY(0);
+}
