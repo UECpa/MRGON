@@ -4,15 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Porto Seguro</title>
+  
+  <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../css/porto.css">
+  
+  <!-- FontAwesome for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/porto.css">
+  
+  <!-- Favicon -->
   <link rel="icon" href="./logo-removebg-preview.png" type="image/x-icon">
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg" style="background-color: #007bff;">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <a class="navbar-brand" href="#">
+      <img src="../../img/logo-removebg-preview.png" alt="Porto Seguro" height="40">
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -28,168 +38,247 @@
     </div>
   </nav>
 
-  <div id="popup" class="popup">
-    <div class="popup-content">
-        <span class="close-popup" onclick="closePopup()">&times;</span>
-        <div class="popup-header">
-            <h2><i class="fas fa-exclamation-triangle mr-2"></i>Atenção</h2>
-        </div>
-        <div class="popup-body">
-            <p>Informamos que todas as compras são seguras. São feitas exclusivamente pelo sistema da seguradora Porto Seguro. Nós da MRG Seguros não nos responsabilizamos por fraudes.</p>
-        </div>
-    </div>
-</div>
+ <!-- Header Section -->
+<!-- Header Section -->
+<header class="text-white text-center py-5" style="background-image: url('https://www.example.com/hero-image.jpg'); background-size: cover; background-position: center; position: relative; background-color: #002f6c;">
+  <!-- Overlay for better text readability -->
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgb(43, 119, 190);"></div>
+  <div class="container" style="position: relative; z-index: 1;">
+      <h1 class="display-4" style="font-weight: bold; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">Porto Seguro</h1>
+      <p class="lead" style="text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);">Confiança e Qualidade em Seguros</p>
+  </div>
+</header>
 
 
-  <!-- About Porto Seguro Section -->
-  <section id="about" class="section-about py-5">
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
     <div class="container">
-      <div class="row mb-4">
-        <div class="col-md-6">
-          <div class="card h-100 border-0 shadow">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2><i class="fas fa-building"></i> Sobre a Porto Seguro</h2>
+          <p><i class="fas fa-globe"></i> A Porto Seguro é uma das principais seguradoras do Brasil, com décadas de experiência no mercado.</p>
+          <p><i class="fas fa-lightbulb"></i> Oferecemos produtos de qualidade e soluções inovadoras para atender às necessidades dos nossos clientes.</p>
+        </div>
+        <div class="col-lg-6">
+          <img src="../../img/porto.png" alt="Imagem da Porto Seguro" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust and Quality Section -->
+  <section id="confianca-qualidade" class="bg-light py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mb-4">
+          <img src="../../img/successful-happy-business-team.jpg" alt="Imagem de Confiança" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-lg-6">
+          <h2><i class="fas fa-handshake"></i> Confiança e Qualidade</h2>
+          <p><i class="fas fa-thumbs-up"></i> Na Porto Seguro, nosso compromisso é com a confiança e a qualidade.</p>
+          <p><i class="fas fa-user-tie"></i> Estamos sempre à disposição para garantir que você tenha a melhor experiência em seguros, com atendimento personalizado e soluções sob medida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Services Section -->
+  <section id="servicos" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2> Serviços Prestados</h2>
+        <p class="lead"><i class="fas fa-shield-alt"></i> A Porto Seguro oferece uma ampla gama de produtos para atender tanto às necessidades individuais quanto corporativas, garantindo segurança e tranquilidade aos seus segurados.</p>
+      </div>
+      <div class="row text-center">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 shadow-sm border-0">
             <div class="card-body">
-              <h2 class="card-title mb-3"><i class="fas fa-building mr-3"></i> Sobre a Porto Seguro</h2>
-              <p class="card-text">
-                A Porto Seguro é uma das principais seguradoras do Brasil, com décadas de experiência no mercado.
-                Desde a sua fundação, a empresa tem se dedicado a oferecer produtos de qualidade e soluções inovadoras para
-                atender às necessidades dos seus clientes.
-              </p>
+              <i class="fas fa-car fa-3x mb-3 text-primary"></i>
+              <h5 class="card-title">Seguro Auto Assinatura</h5>
+              <p class="card-text">Proteção completa para o seu veículo, com diversas opções de cobertura.</p>
             </div>
           </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <i class="fas fa-credit-card fa-3x mb-3 text-primary"></i>
+              <h5 class="card-title">Cartão Porto Bank</h5>
+              <p class="card-text">Garanta segurança financeira com as melhores condições de crédito.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <i class="fas fa-user-shield fa-3x mb-3 text-primary"></i>
+              <h5 class="card-title">Porto Vida</h5>
+              <p class="card-text">Proteção para você e sua família em todas as fases da vida.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <i class="fas fa-mobile-alt fa-3x mb-3 text-primary"></i>
+              <h5 class="card-title">Seguro Celular</h5>
+              <p class="card-text">Cobertura completa para o seu celular, onde quer que você esteja.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <i class="fas fa-plane fa-3x mb-3 text-primary"></i>
+              <h5 class="card-title">Seguro Viagem</h5>
+              <p class="card-text">Viaje com tranquilidade, sabendo que você está protegido em qualquer lugar do mundo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <i class="fas fa-home fa-3x mb-3 text-primary"></i>
+              <h5 class="card-title">Seguro Residencial</h5>
+              <p class="card-text">Garanta a segurança do seu lar com coberturas que se adaptam ao seu estilo de vida.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="section-products py-5 bg-light text-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2 class="section-title"><i class="fas fa-box-open me-2"></i> Contrate Agora</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="assistencias" class="py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 class="section-title animate__animated animate__fadeInUp">
+                    <i class="fas fa-tools"></i> Assistências Porto Seguro
+                </h2>
+                <p class="lead animate__animated animate__fadeInUp">
+                    Descubra nossas soluções exclusivas de assistência para garantir ainda mais segurança e conforto.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-6 animate__animated animate__fadeInLeft">
+            <div class="logo-wrapper" style="background-color: white; padding: 20px; border-radius: 10px; display: inline-block;">
+                <img src="../../img/logo-porto-servico.png" alt="Logo do Porto Serviços" class="img-fluid rounded shadow mb-4" style="width: 100%; max-width: 500px;">
+            </div>
         </div>
         
-        <div class="col-md-6">
-          <div class="card h-100 border-0 shadow">
-            <div class="card-body">
-              <h2 class="card-title mb-3"><i class="fas fa-shield-alt mr-3"></i> Confiança e Qualidade</h2>
-              <p class="card-text">
-                Com um histórico de solidez financeira e compromisso com a segurança, a Porto Seguro construiu uma reputação
-                de confiança no mercado. Seus clientes confiam na empresa para proteger seus bens e suas vidas com produtos
-                seguros e confiáveis.
-              </p>
+            <div class="col-md-6 animate__animated animate__fadeInRight d-flex align-items-center">
+                <div>
+                    <h3 class="card-title">Conheça nossas assistências exclusivas</h3>
+                    <p class="card-text">
+                        A Porto Seguro oferece uma variedade de assistências para garantir ainda mais segurança e conforto para você e sua família. Nossas assistências são projetadas para oferecer suporte imediato e eficiente em diversas situações, desde problemas em sua residência até imprevistos durante viagens.
+                    </p>
+                    <a href="https://www.portosegurofaz.com.br/?cod=d6090ac69df446cda1dce88eef4505f4&utm_source=28250J&utm_medium=geradorLinks&utm_campaign=GeradordeLinks_FJ88YJ&utm_content=MINAS_RIO_GRANDE_ADM_CORRETORA_DE_SEGUROS_LTDA&origem=mrg" class="btn btn-light btn-lg mt-3"><i class="fas fa-chevron-circle-right fa-fw"></i> Saiba Mais</a>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-  
-      <div class="row">
-        <div class="col-md-12">
-          <div class="card border-0 shadow">
-            <div class="card-body text-center">
-              <h2 class="card-title mb-4"><i class="fas fa-cogs mr-3"></i> Serviços Prestados</h2>
-              <ul class="list-unstyled">
-                <li class="mb-3"><i class="fas fa-car mr-2"></i> Seguro Auto Assinatura</li>
-                <li class="mb-3"><i class="fas fa-credit-card mr-2"></i> Cartão Porto Bank</li>
-                <li class="mb-3"><i class="fas fa-user-shield mr-2"></i> Porto Vida</li>
-                <li class="mb-3"><i class="fas fa-mobile-alt mr-2"></i> Seguro Celular</li>
-                <li class="mb-3"><i class="fas fa-plane-departure mr-2"></i> Seguro Viagem</li>
-                <li class="mb-3"><i class="fas fa-tools mr-2"></i>Assistências Porto Seguro</li>
-              </ul>
-              <p class="mt-4">
-                A Porto Seguro oferece uma ampla gama de produtos para atender tanto às necessidades individuais quanto corporativas, garantindo segurança e tranquilidade aos seus segurados.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
-  
-  <section id="assistencias" class="py-5">
-    <div class="container">
+</section>
+
+
+ <!-- Demais Produtos Section -->
+<section id="demais-produtos" class="py-5 bg-light text-dark">
+  <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <h2 class="section-title text-center animate__animated animate__fadeInUp">
-            <i class="fas fa-tools"></i> Assistências Porto Seguro
-          </h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 offset-md-3">
-          <div class="card border-0 shadow text-center animate__animated animate__fadeIn">
-            <div class="card-body">
-              <img src="./logo-porto-servico.png" alt="Logo do Porto Serviços" class="logo-img mb-3" style="max-width: 90%; height: auto;">
-              <h5 class="card-title">Conheça nossas assistências exclusivas</h5>
-              <p class="card-text">A Porto Seguro oferece uma variedade de assistências para garantir ainda mais segurança e conforto para você e sua família.</p>
-              <a href="https://www.portosegurofaz.com.br/?cod=d6090ac69df446cda1dce88eef4505f4&utm_source=28250J&utm_medium=geradorLinks&utm_campaign=GeradordeLinks_FJ88YJ&utm_content=MINAS_RIO_GRANDE_ADM_CORRETORA_DE_SEGUROS_LTDA&origem=mrg" class="btn btn-primary"><i class="fas fa-chevron-circle-right fa-fw"></i> Saiba Mais</a>
-            </div>
+          <div class="col-md-12 text-center">
+              <h2 class="section-title"><i class="fas fa-box-open me-2"></i> Demais Produtos</h2>
+              <p class="lead">Explore outros produtos oferecidos pela Porto Seguro para atender todas as suas necessidades.</p>
           </div>
-        </div>
       </div>
-    </div>
-  </section>
-  
-  <section id="products" class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="section-title"><i class="fas fa-box-open"></i>Demais Produtos</h2>
-        </div>
+      <div class="row mt-4">
+          <div class="col-lg-4 col-md-6 mb-4">
+              <div class="product-card text-center border-0 shadow-sm p-4 bg-white">
+                  <i class="product-icon fas fa-car fa-2x mb-3 text-primary"></i>
+                  <h5>Seguro Auto</h5>
+                  <p class="card-text">Proteção completa para o seu veículo, com diversas opções de cobertura.</p>
+                  <a href="https://porto.vc/seguro_auto_db17275862954b63b4179652ee73e940" class="btn btn-primary mt-3">Saiba Mais <i class="fas fa-chevron-right"></i></a>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+              <div class="product-card text-center border-0 shadow-sm p-4 bg-white">
+                  <i class="product-icon fas fa-home fa-2x mb-3 text-primary"></i>
+                  <h5>Seguro Residencial</h5>
+                  <p class="card-text">Garanta a segurança do seu lar com coberturas que se adaptam ao seu estilo de vida.</p>
+                  <a href="https://www.portoseguro.com.br/loja/seguro-residencial?link_uuid=4c421ad9-0bb6-4770-a57f-23c1d53c272e&origem=mrg" class="btn btn-primary mt-3">Saiba Mais <i class="fas fa-chevron-right"></i></a>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+              <div class="product-card text-center border-0 shadow-sm p-4 bg-white">
+                  <i class="product-icon fas fa-user-shield fa-2x mb-3 text-primary"></i>
+                  <h5>Porto Vida</h5>
+                  <p class="card-text">Proteção para você e sua família em todas as fases da vida.</p>
+                  <a href="https://wwws.portoseguro.com.br/vendaonline/vidamaissimples/home.ns?cod=da7486c4a17f49ab9d74f0252540e607&utm_source=28250J&utm_medium=geradorLinks&utm_campaign=GeradordeLinks_FJ88YJ&utm_content=MINAS_RIO_GRANDE_ADM_CORRETORA_DE_SEGUROS_LTDA" class="btn btn-primary mt-3">Saiba Mais <i class="fas fa-chevron-right"></i></a>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+              <div class="product-card text-center border-0 shadow-sm p-4 bg-white">
+                  <i class="product-icon fas fa-plane fa-2x mb-3 text-primary"></i>
+                  <h5>Seguro Viagem</h5>
+                  <p class="card-text">Viaje com tranquilidade, sabendo que você está protegido em qualquer lugar do mundo.</p>
+                  <a href="https://wwws.portoseguro.com.br/vendaonline/viagem/home.ns?cod=adc87ae225cd47a78b76f41a4e0c31e8&utm_source=28250J&utm_medium=geradorLinks&utm_campaign=GeradordeLinks_FJ88YJ&utm_content=MINAS_RIO_GRANDE_ADM_CORRETORA_DE_SEGUROS_LTDA&origem=" class="btn btn-primary mt-3">Saiba Mais <i class="fas fa-chevron-right"></i></a>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+              <div class="product-card text-center border-0 shadow-sm p-4 bg-white">
+                  <i class="product-icon fas fa-mobile-alt fa-2x mb-3 text-primary"></i>
+                  <h5>Seguro Celular</h5>
+                  <p class="card-text">Cobertura completa para o seu celular, onde quer que você esteja.</p>
+                  <a href="https://porto.vc/seguro_celular_cbacf59f864b45f998a3719c3b61fac2" class="btn btn-primary mt-3">Saiba Mais <i class="fas fa-chevron-right"></i></a>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+              <div class="product-card text-center border-0 shadow-sm p-4 bg-white">
+                  <i class="product-icon fas fa-credit-card fa-2x mb-3 text-primary"></i>
+                  <h5>Cartão Porto Bank</h5>
+                  <p class="card-text">Garanta segurança financeira com as melhores condições de crédito.</p>
+                  <a href="https://porto.vc/cartao_de_credito_porto_bank_1f89b89b1ee64034b097e9e1d75c550a" class="btn btn-primary mt-3">Saiba Mais <i class="fas fa-chevron-right"></i></a>
+              </div>
+          </div>
       </div>
-      <!-- Aqui você pode adicionar os cartões dos produtos ou outros elementos relacionados aos produtos -->
-    </div>
-  </sectio>
-  <!-- Products Section -->
-  <section id="products" class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="product-card">
-          <i class="product-icon fas fa-car-alt"></i>
-          <h5>Seguro Auto Assinatura</h5>
-          <a href="http://porto.vc/AZUL_28250J" class="btn btn-primary"><i class="fas fa-chevron-circle-right fa-fw"></i> Saiba Mais</a>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="product-card">
-          <i class="product-icon fas fa-credit-card"></i>
-          <h5>Cartão Porto Bank</h5>
-          <a href="https://porto.vc/cartao_de_credito_porto_bank_1f89b89b1ee64034b097e9e1d75c550a" class="btn btn-primary"><i class="fas fa-chevron-circle-right fa-fw"></i> Saiba Mais</a>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="product-card">
-          <i class="product-icon fas fa-user-shield"></i>
-          <h5>Porto Vida</h5>
-          <a href="https://wwws.portoseguro.com.br/vendaonline/vidamaissimples/home.ns?cod=da7486c4a17f49ab9d74f0252540e607&utm_source=28250J&utm_medium=geradorLinks&utm_campaign=GeradordeLinks_FJ88YJ&utm_content=MINAS_RIO_GRANDE_ADM_CORRETORA_DE_SEGUROS_LTDA" class="btn btn-primary"><i class="fas fa-chevron-circle-right fa-fw"></i> Saiba Mais</a>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="product-card">
-          <i class="product-icon fas fa-mobile-alt"></i>
-          <h5>Seguro Celular</h5>
-          <a href="https://porto.vc/seguro_celular_cbacf59f864b45f998a3719c3b61fac2" class="btn btn-primary"><i class="fas fa-chevron-circle-right fa-fw"></i> Saiba Mais</a>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="product-card">
-          <i class="product-icon fas fa-plane-departure"></i>
-          <h5>Seguro Viagem</h5>
-          <a href="https://wwws.portoseguro.com.br/vendaonline/viagem/home.ns?cod=adc87ae225cd47a78b76f41a4e0c31e8&utm_source=28250J&utm_medium=geradorLinks&utm_campaign=GeradordeLinks_FJ88YJ&utm_content=MINAS_RIO_GRANDE_ADM_CORRETORA_DE_SEGUROS_LTDA&origem=" class="btn btn-primary"><i class="fas fa-chevron-circle-right fa-fw"></i> Saiba Mais</a>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="product-card">
-          <i class="product-icon fas fa-home"></i>
-          <h5>Seguro Residencial</h5>
-          <a href="https://www.portoseguro.com.br/loja/seguro-residencial?link_uuid=4c421ad9-0bb6-4770-a57f-23c1d53c272e&origem=mrg" class="btn btn-primary"><i class="fas fa-chevron-circle-right fa-fw"></i> Saiba Mais</a>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="product-card">
-          <i class="product-icon fas fa-car"></i>
-          <h5>Seguro Auto</h5>
-          <a href="https://porto.vc/seguro_auto_db17275862954b63b4179652ee73e940" class="btn btn-primary"><i class="fas fa-chevron-circle-right fa-fw"></i> Saiba Mais</a>
-        </div>
-      </div>
-  </section>
-  
+  </div>
+</section>
+
+
   <!-- Footer -->
-  <footer class="text-center mt-5 py-4 bg-light">
-    <p>&copy; 2024 Porto Seguro. Todos os direitos reservados.</p>
+  <footer class="text-center py-4 bg-light-green text-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <p class="mb-0">&copy; 2024 Porto Seguro. Todos os direitos reservados.</p>
+        </div>
+        <div class="col-md-6">
+          <div class="d-flex justify-content-center justify-content-md-end align-items-center">
+            <img src="../../img/porto2.png" alt="Logo Porto Seguro" class="img-fluid mx-2" style="height: 250px;">
+            <img src="../../img/logo.png" alt="Logo MRG Seguros" class="img-fluid mx-2" style="height: 50px;">
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 
+  <!-- JavaScript Files -->
   <script src="../js/porto.js"></script> <!-- Arquivo JavaScript para o popup -->
-
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

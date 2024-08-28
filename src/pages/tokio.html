@@ -4,14 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tokio Marine</title>
+  
+  <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../css/tokio.css">
+  
+  <!-- FontAwesome for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/tokio.css">
+  
+  <!-- Favicon -->
   <link rel="icon" href="./logo-removebg-preview.png" type="image/x-icon">
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-custom">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <a class="navbar-brand" href="#">
+      <img src="../../img/logo-removebg-preview.png" alt="Tokio Marine" height="40">
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -27,132 +38,192 @@
     </div>
   </nav>
 
-  <div id="popup" class="popup">
-    <div class="popup-content">
-      <span class="close-popup" onclick="closePopup()">&times;</span>
-      <h2><i class="fas fa-exclamation-triangle mr-2"></i>Atenção</h2>
-      <p>Informamos que todas as compras são seguras, feitas exclusivamente pelo sistema da seguradora Tokio Marine. Nos da MRG Seguros, não nos responsabilizamos por fraudes.</p>
+  <!-- Header Section -->
+  <header class="text-white text-center py-5" style="background-image: url('https://www.example.com/hero-image.jpg'); background-size: cover; background-position: center; position: relative;">
+    <!-- Overlay for better text readability -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
+    <div class="container" style="position: relative; z-index: 1;">
+      <h1 class="display-4" style="font-weight: bold; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">Tokio Marine Seguradora</h1>
+      <p class="lead" style="text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);">Confiança e Qualidade em Seguros</p>
     </div>
-  </div>
-  
-<!-- About Tokio Marine Section -->
-<section id="about" class="section-about py-5">
-  <div class="container">
-    <div class="row mb-4">
-      <div class="col-md-6">
-        <div class="card h-100 border-0 shadow">
-          <div class="card-body">
-            <h2 class="card-title mb-3"><i class="fas fa-building mr-3"></i>Sobre a Tokio Marine</h2>
-            <p class="card-text">
-              A Tokio Marine é uma das principais seguradoras do Brasil, com mais de 100 anos de experiência no mercado. Desde a sua fundação, a empresa tem se dedicado a oferecer produtos de qualidade e soluções inovadoras para atender às necessidades dos seus clientes.
-            </p>
-          </div>
-        </div>
-      </div>
+  </header>
 
-      
-      <div class="col-md-6">
-        <div class="card h-100 border-0 shadow">
-          <div class="card-body">
-            <h2 class="card-title mb-3"><i class="fas fa-shield-alt mr-3"></i>Confiança e Qualidade</h2>
-            <p class="card-text">
-              Com um histórico de solidez financeira e compromisso com a segurança, a Tokio Marine construiu uma reputação de confiança no mercado. Seus clientes confiam na empresa para proteger seus bens e suas vidas com produtos seguros e confiáveis.
-            </p>
-          </div>
+  <!-- About Section -->
+  <section id="sobre" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2><i class="fas fa-building"></i> Sobre a Tokio Marine</h2>
+          <p><i class="fas fa-globe"></i> A Tokio Marine é uma das maiores seguradoras do mundo, com mais de 140 anos de história e presença global.</p>
+          <p><i class="fas fa-lightbulb"></i> Oferecemos soluções inovadoras em seguros para proteger o que é mais importante para você.</p>
+        </div>
+        <div class="col-lg-6">
+          <img src="../../img/TokioLogo.png" alt="Imagem da Tokio Marine" class="img-fluid rounded shadow">
         </div>
       </div>
     </div>
+  </section>
 
+  <!-- Trust and Quality Section -->
+  <section id="confianca-qualidade" class="bg-light py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mb-4">
+          <img src="../../img/successful-happy-business-team.jpg" alt="Imagem de Confiança" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-lg-6">
+          <h2><i class="fas fa-handshake"></i> Confiança e Qualidade</h2>
+          <p><i class="fas fa-thumbs-up"></i> Na Tokio Marine, nosso compromisso é com a confiança e a qualidade.</p>
+          <p><i class="fas fa-user-tie"></i> Estamos sempre à disposição para garantir que você tenha a melhor experiência em seguros, com atendimento personalizado e soluções sob medida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="servicos" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2> Serviços Prestados</h2>
+        <p class="lead"><i class="fas fa-shield-alt"></i> A Tokio Marine oferece uma ampla gama de produtos para atender tanto às necessidades individuais quanto corporativas, garantindo segurança e tranquilidade aos seus segurados.</p>
+      </div>
+      <div class="row text-center">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <i class="fas fa-car fa-3x mb-3 text-yellow"></i>
+              <h5 class="card-title">Seguro Auto</h5>
+              <p class="card-text">Proteção completa para o seu veículo, com diversas opções de cobertura.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <i class="fas fa-home fa-3x mb-3 text-yellow"></i>
+              <h5 class="card-title">Seguro Residencial</h5>
+              <p class="card-text">Garanta a segurança do seu lar com coberturas que se adaptam ao seu estilo de vida.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <i class="fas fa-user-shield fa-3x mb-3 text-yellow"></i>
+              <h5 class="card-title">Acidentes Pessoais Individual</h5>
+              <p class="card-text">Cobertura para acidentes pessoais, garantindo segurança para você e sua família.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <i class="fas fa-heartbeat fa-3x mb-3 text-yellow"></i>
+              <h5 class="card-title">Seguro de Vida</h5>
+              <p class="card-text">Proteção financeira para você e sua família em momentos inesperados.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <i class="fas fa-plane fa-3x mb-3 text-yellow"></i>
+              <h5 class="card-title">Seguro Viagem</h5>
+              <p class="card-text">Viaje com tranquilidade, sabendo que você está protegido em qualquer lugar do mundo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <i class="fas fa-user-graduate fa-3x mb-3 text-yellow"></i>
+              <h5 class="card-title">Seguro Estagiário</h5>
+              <p class="card-text">Cobertura específica para estagiários, garantindo segurança no início da sua carreira.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="section-products py-5 bg-light text-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2 class="section-title"><i class="fas fa-box-open me-2"></i> Contrate Agora</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="products" class="container py-5">
     <div class="row">
-      <div class="col-md-12">
-        <div class="card border-0 shadow">
-          <div class="card-body text-center">
-            <h2 class="card-title mb-4"><i class="fas fa-cogs mr-3"></i>Serviços Prestados</h2>
-            <ul class="list-unstyled">
-              <li class="mb-3"><i class="fas fa-car mr-2"></i>Seguro Auto</li>
-              <li class="mb-3"><i class="fas fa-home mr-2"></i>Seguro Residencial</li>
-              <li class="mb-3"><i class="fas fa-briefcase-medical mr-2"></i>Acidentes Pessoais Individual</li>
-              <li class="mb-3"><i class="fas fa-user-shield mr-2"></i>Seguro de Vida</li>
-              <li class="mb-3"><i class="fas fa-plane mr-2"></i>Seguro Viagem</li>
-              <li class="mb-3"><i class="fas fa-user-graduate mr-2"></i>Seguro Estagiário</li>
-            </ul>
-            <p class="mt-4">
-              A Tokio Marine oferece uma ampla gama de produtos para atender tanto às necessidades individuais quanto corporativas, garantindo segurança e tranquilidade aos seus segurados.
-            </p>
-          </div>
+      <div class="col-md-4 mb-4">
+        <div class="product-card text-center border-0 shadow-sm p-4 bg-light">
+          <i class="product-icon fas fa-car fa-2x mb-3 text-yellow"></i>
+          <h5>Seguro Auto</h5>
+          <a href="https://cotacoes.tokiomarine.com.br/massificados/auto/digital/front/#/broker/ec385d5a-a08a-40ab-903c-311c13f19b1b" class="btn btn-primary mt-3">Saiba Mais <i class="fas fa-chevron-right"></i></a>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="product-card text-center border-0 shadow-sm p-4 bg-light">
+          <i class="product-icon fas fa-home fa-2x mb-3 text-yellow"></i>
+          <h5>Seguro Residencial</h5>
+          <a href="https://servicos.tokiomarine.com.br/massificados/cotador-rd-ot-digital/#/5584458c-061b-40a1-b243-59da459ddec5" class="btn btn-primary mt-3">Saiba Mais <i class="fas fa-chevron-right"></i></a>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="product-card text-center border-0 shadow-sm p-4 bg-light">
+          <i class="product-icon fas fa-briefcase-medical fa-2x mb-3 text-yellow"></i>
+          <h5>Acidentes Pessoais</h5>
+          <a href="https://servicos.tokiomarine.com.br/aff/ctv/api/digita-vida-individual/#/seguro-acidentes-pessoais/broker/1779453a-e409-49b7-a574-3d40fdeaabca" class="btn btn-primary mt-3">Saiba Mais <i class="fas fa-chevron-right"></i></a>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="product-card text-center border-0 shadow-sm p-4 bg-light">
+          <i class="product-icon fas fa-user-shield fa-2x mb-3 text-yellow"></i>
+          <h5>Seguro de Vida</h5>
+          <a href="https://servicos.tokiomarine.com.br/sva/view/digital/vida-individual/#/broker/b69e7f48-c658-4991-91bc-a73ea7d86e15" class="btn btn-primary mt-3">Saiba Mais <i class="fas fa-chevron-right"></i></a>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="product-card text-center border-0 shadow-sm p-4 bg-light">
+          <i class="product-icon fas fa-plane fa-2x mb-3 text-yellow"></i>
+          <h5>Seguro Viagem</h5>
+          <a href="https://servicos.tokiomarine.com.br/sva/view/digital/seguro-viagem/#/broker/ebf302c9-94bd-4a1b-8485-b20a55d6fbcf" class="btn btn-primary mt-3">Saiba Mais <i class="fas fa-chevron-right"></i></a>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="product-card text-center border-0 shadow-sm p-4 bg-light">
+          <i class="product-icon fas fa-user-graduate fa-2x mb-3 text-yellow"></i>
+          <h5>Seguro Estagiário</h5>
+          <a href="https://servicos.tokiomarine.com.br/aff/ctv/api/digita-vida-individual/#/seguro-acidentes-pessoais-estagiario/broker/5cb61dcb-eca5-4e19-af87-b6c23dbe59d5" class="btn btn-primary mt-3">Saiba Mais <i class="fas fa-chevron-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer -->
+<footer class="text-center py-4 bg-light-green text-white">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-3 mb-md-0">
+        <p class="mb-0">&copy; 2024 Tokio Marine em parceria com MRG Seguros. Todos os direitos reservados.</p>
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex justify-content-center justify-content-md-end align-items-center">
+          <img src="../../img/TokioLogo.png" alt="Logo Tokio Marine" class="img-fluid mx-2" style="height: 150px;">
+          <img src="../../img/logo.png" alt="Logo MRG Seguros" class="img-fluid mx-2" style="height: 50px;">
         </div>
       </div>
     </div>
   </div>
-</section>
+</footer>
 
 
-<section id="products" class="section-products py-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h2 class="section-title"><i class="fas fa-box-open me-2"></i> Nossos Produtos</h2>
-      </div>
-    </div>
-  </div>
-</section>
-
- 
-<!-- Products Section -->
-<section id="products" class="container">
-  <div class="row">
-    <div class="col-md-4">
-      <div class="product-card">
-        <i class="product-icon fas fa-car"></i>
-        <h5>Seguro Auto</h5>
-        <a href="https://cotacoes.tokiomarine.com.br/massificados/auto/digital/front/#/broker/ec385d5a-a08a-40ab-903c-311c13f19b1b" class="btn btn-primary">Saiba Mais <i class="fas fa-chevron-right"></i></a>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="product-card">
-        <i class="product-icon fas fa-home"></i>
-        <h5>Seguro Residencial</h5>
-        <a href="https://servicos.tokiomarine.com.br/massificados/cotador-rd-ot-digital/#/5584458c-061b-40a1-b243-59da459ddec5" class="btn btn-primary">Saiba Mais <i class="fas fa-chevron-right"></i></a>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="product-card">
-        <i class="product-icon fas fa-briefcase-medical"></i>
-        <h5>Acidentes Pessoais</h5>
-        <a href="https://servicos.tokiomarine.com.br/aff/ctv/api/digita-vida-individual/#/seguro-acidentes-pessoais/broker/1779453a-e409-49b7-a574-3d40fdeaabca" class="btn btn-primary">Saiba Mais <i class="fas fa-chevron-right"></i></a>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="product-card">
-        <i class="product-icon fas fa-user-shield"></i>
-        <h5>Seguro de Vida</h5>
-        <a href="https://servicos.tokiomarine.com.br/sva/view/digital/vida-individual/#/broker/b69e7f48-c658-4991-91bc-a73ea7d86e15" class="btn btn-primary">Saiba Mais <i class="fas fa-chevron-right"></i></a>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="product-card">
-        <i class="product-icon fas fa-plane"></i>
-        <h5>Seguro Viagem</h5>
-        <a href="https://servicos.tokiomarine.com.br/sva/view/digital/seguro-viagem/#/broker/ebf302c9-94bd-4a1b-8485-b20a55d6fbcf" class="btn btn-primary">Saiba Mais <i class="fas fa-chevron-right"></i></a>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="product-card">
-        <i class="product-icon fas fa-user-graduate fa-3x"></i>
-        <h5>Seguro Estagiário</h5>
-        <a href="https://servicos.tokiomarine.com.br/aff/ctv/api/digita-vida-individual/#/seguro-acidentes-pessoais-estagiario/broker/5cb61dcb-eca5-4e19-af87-b6c23dbe59d5" class="btn btn-primary">Saiba Mais <i class="fas fa-chevron-right"></i></a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-  <!-- Footer -->
-  <footer class="text-center mt-5 py-4 bg-light">
-    <p>&copy; 2024 Tokio Marine. Todos os direitos reservados.</p>
-  </footer>
+  <!-- JavaScript Files -->
   <script src="../js/tokio.js"></script> <!-- Arquivo JavaScript para o popup -->
-
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
